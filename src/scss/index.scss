@@ -1,0 +1,249 @@
+@import "reboot";
+
+$c1: white;
+$c2: blue;
+$c3: black;
+$c4: yellow;
+$c5: gray;
+$c6: green;
+$c7: red;
+$c8: purple;
+$c9: silver;
+$c10: orange;
+$c11: pink;
+$c12: maroon;
+$c13: lime;
+$c14: blue;
+$c15: black;
+
+.header {
+  height: 57px;
+  background-color: $c14;
+}
+
+.section_main_repair {
+  height: 476px;
+  background-color: $c13;
+}
+
+.section_completed_projects {
+  height: 634px;
+  background-color: $c12;
+}
+.section_video {
+  height: 851px;
+  background-color: $c11;
+}
+
+.section_types_of_repair {
+  height: 2068px;
+  background-color: $c7;
+}
+
+.section_design_project {
+  height: 1715px;
+  background-color: $c10;
+}
+
+.section_our_team {
+  height: 1629px;
+  background-color: $c11;
+}
+
+.form_and_map {
+  background-color: white;
+  height: 973px;
+
+  .form {
+    height: 497px;
+
+    background-color: $c13;
+  }
+
+  .map {
+    height: 255px;
+    background-color: $c14;
+  }
+}
+
+@media (min-width: 375px) {
+  .header {
+    height: 83px;
+    background-color: $c1;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .sidebar {
+    flex-basis: 83px;
+    height: 707px;
+    background-color: $c2;
+  }
+
+  .section_main_repair {
+    flex-basis: 1357px;
+    height: 707px;
+    background-color: $c3;
+  }
+
+  .section_completed_projects {
+    height: 1074px;
+    background-color: $c4;
+  }
+  .section_video {
+    height: 856px;
+    background-color: $c6;
+  }
+
+  .youtube_container {
+    width: 817px;
+    height: 434px;
+    background-color: $c5;
+  }
+
+  .section_types_of_repair {
+    height: 716px;
+    background-color: $c7;
+  }
+
+  .section_circle {
+    height: 1303px;
+    background-color: $c8;
+  }
+
+  .section_portfolio {
+    height: 1018px;
+    background-color: $c9;
+  }
+
+  .section_design_project {
+    height: 1592px;
+    background-color: $c10;
+  }
+
+  .section_our_team {
+    height: 845px;
+    background-color: $c11;
+  }
+
+  .section_our_clients {
+    height: 643px;
+    background-color: $c12;
+  }
+  .form_and_map {
+    background-color: white;
+    height: 1112px;
+
+    .form {
+      height: 604px;
+      width: 884px;
+      background-color: $c13;
+    }
+
+    .map {
+      height: 466px;
+      width: 925px;
+      background-color: $c14;
+    }
+  }
+  .footer {
+    height: 134px;
+    background-color: $c15;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+    margin: auto;
+    background-image: url("../../assets/img/background.png");
+  }
+
+  .header {
+    height: 83px;
+    background-color: $c1;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .sidebar {
+    flex-basis: 83px;
+    height: 707px;
+    background-color: $c2;
+  }
+
+  .section_main_repair {
+    flex-basis: 1357px;
+    height: 707px;
+    background-color: $c3;
+  }
+
+  .section_completed_projects {
+    height: 1074px;
+    background-color: $c4;
+  }
+  .section_video {
+    height: 856px;
+    background-color: $c6;
+  }
+
+  .youtube_container {
+    width: 817px;
+    height: 434px;
+    background-color: $c5;
+  }
+
+  .section_types_of_repair {
+    height: 716px;
+    background-color: $c7;
+  }
+
+  .section_circle {
+    height: 1303px;
+    background-color: $c8;
+  }
+
+  .section_portfolio {
+    height: 1018px;
+    background-color: $c9;
+  }
+
+  .section_design_project {
+    height: 1592px;
+    background-color: $c10;
+  }
+
+  .section_our_team {
+    height: 845px;
+    background-color: $c11;
+  }
+
+  .section_our_clients {
+    height: 643px;
+    background-color: $c12;
+  }
+  .form_and_map {
+    background-color: white;
+    height: 1112px;
+
+    .form {
+      height: 604px;
+      width: 884px;
+      background-color: $c13;
+    }
+
+    .map {
+      height: 466px;
+      width: 925px;
+      background-color: $c14;
+    }
+  }
+  .footer {
+    height: 134px;
+    background-color: $c15;
+  }
+}

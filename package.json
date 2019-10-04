@@ -1,0 +1,28 @@
+{
+  "name": "repair-design-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "d90375",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "dev:watch": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
