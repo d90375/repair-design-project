@@ -12,6 +12,7 @@
 .works__container-left {
   min-width: 430px;
   margin-right: 60px;
+  max-width: 500px;
 }
 
 .works__container-right {
@@ -19,6 +20,8 @@
 }
 
 .works__title {
+  margin-bottom: 33px;
+  margin-top: 60px;
   color: $second;
   max-height: 67px;
   font-family: "YesevaOne", serif;
@@ -29,7 +32,7 @@
   text-transform: uppercase;
   max-width: 160px;
 
-  ::before{
+  ::before {
     content: "";
     display: inline-block;
     width: 52px;
@@ -41,7 +44,15 @@
 }
 
 .works__list {
+  margin-top: 41px;
   list-style: none;
+  padding-left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 }
 
 .works__text {
@@ -75,8 +86,8 @@
 
 .works__arrows {
   display: flex;
-
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .arrows__dot {
@@ -117,7 +128,7 @@
   text-decoration: none;
   transition-duration: 1500ms;
   transition-property: color;
-  padding-right: 60px;
+  margin-right: 60px;
   padding-bottom: 5px;
 
   &:hover {
@@ -138,12 +149,138 @@
   :nth-child(1) {
     margin-right: 21px;
   }
-  .works__photo-play{
+  .works__photo-play {
     position: absolute;
-    content: "";
     background: url("../assets/image/desktop/play_works.png");
-    width: 55px;
-    height: 55px;
+    left: 730px;
+    bottom: 207px;
+    width: 80px;
+    height: 80px;
   }
+}
+
+.works__mobile--hide{
+  display: none;
+}
+
+@media (max-width: 1438px) {
+  .works__photo {
+    :nth-child(2) {
+      display: none;
+    }
+    .works__photo-play {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+.works__wrap{
+  flex-direction: column;
+}
+}
+
+@media (max-width: 830px){
+  .works__wrap{
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  .towns_links{
+    display: none;
+  }
+}
+
+@media (max-width: 740px){
+  .works__container-left{
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .works__arrows{
+    display: none;
+  }
+  .works__wrap{
+    padding-left: 18px;
+    padding-top: 18px;
+  }
+  .works__mobile--hide{
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    background: url("../assets/image/desktop/background/works__back.png");
+    width: 340px;
+    height: 242px;
+  }
+
+  .works__mobile-arrow-left{
+    position: absolute;
+    left: 10px;
+    top: 95px;
+    background: url("../assets/image/mobile/works__arrow1.png");
+    width: 36px;
+    height: 36px;
+  }
+
+  .works__mobile-arrow-right{
+    position: absolute;
+    left: 295px;
+    top: 95px;
+    background: url("../assets/image/mobile/works__arrow2.png");
+    width: 36px;
+    height: 36px;
+  }
+
+
+
+  .works__photo {
+    :nth-child(1) {
+      display: none;
+    }
+    padding-left: 18px;
+    padding-top: 36px
+  }
+  .works__title{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -1.54px;
+    line-height: 30.49px;
+    text-transform: uppercase;
+  }
+  .works__text{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.19px;
+  }
+  .works__list{
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px){
+  .works__photo{
+    padding-left: 18px;
+    padding-top: 36px;
+  }
+  .works__title{
+
+  }
+
+  .works__text{
+
+  }
+  .works__mobile--hide{
+    margin-top: 18px;
+    margin-left: 18px;
+  }
+
+  .works__list{
+    margin: 0;
+    font-size: 14px;
+  }
+
+
 }
 
