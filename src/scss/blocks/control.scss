@@ -1,0 +1,307 @@
+.control {
+  background: linear-gradient(
+    to bottom,
+    #131313 0%,
+    #131313 350px,
+    #fff 350px,
+    #fff 100%
+  );
+
+  .control__title {
+    text-align: center;
+    color: #ffffff;
+    font-family: "YesevaOne", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  .control__icon {
+    margin: 12px auto 32px auto;
+    background: url("../assets/image/icon/camera.svg");
+    height: 29px;
+    width: 113px;
+  }
+  .video-wrap {
+    margin: 0 auto 150px auto;
+    max-width: 817px;
+    max-height: 434px;
+  }
+  .control__video {
+    @include adaptive-video();
+  }
+  .control__text {
+    position: relative;
+    margin: 0 auto 91px auto;
+    max-width: 681px;
+    text-align: center;
+    color: #363636;
+    font-family: "FuturaBookC", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35.16px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 310px;
+      top: -26px;
+      height: 2px;
+      width: 55px;
+      background-color: #e3b873;
+    }
+  }
+
+  .input {
+    flex-grow: 1;
+    margin: 0 auto 37px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+    .input__info {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 233px;
+      margin-right: 56px;
+
+      .input__title {
+        color: rgba(54, 54, 54, 0.5);
+        font-family: "FuturaBookC", serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21.09px;
+      }
+
+      .input__text {
+        outline: 0;
+        border-width: 0 0 1px;
+        border-color: rgba(54, 54, 54, 0.3);
+        color: #363636;
+        font-family: "FuturaBookC", serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.31px;
+      }
+    }
+  }
+
+  .control__button {
+    @include button(200px, 52px) {
+      color: #ffffff;
+      font-family: "FuturaDemiC", serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 26.37px;
+      text-transform: uppercase;
+    }
+  }
+  /* Customize the label (the container) */
+  .container1 {
+    margin-top: 37px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    /* Style for "I agree to" */
+    width: 260px;
+    height: 18px;
+    color: #181818;
+    font-family: "FuturaBookC", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container1:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container1 input:checked ~ .checkmark {
+    background-color: #e3b873;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container1 .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 980px) {
+  .control {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .video-wrap {
+      margin: 0 auto 70px auto;
+
+    }
+
+    .input {
+      max-width: 400px;
+      .input__info {
+        margin: 0;
+      }
+    }
+    .control__button {
+      order: 4;
+    }
+    .container1 {
+      order: 3;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .control {
+    background: linear-gradient(
+      to bottom,
+      #131313 0%,
+      #131313 1028px,
+      #fff 350px,
+      #fff 100%
+    );
+    .control__text {
+      color: $white;
+    }
+
+    .container1 {
+      color: #ffffff;
+    }
+
+    .input {
+      .input__info {
+        color: #c4c4c4;
+        .input__text {
+          border-color: #ffffff;
+          color: $white;
+          background-color: #131313;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .control {
+
+    .control__title {
+      font-size: 22px;
+    }
+
+    .control__text {
+      margin: 0 auto 33px auto;
+      /* Style for "At each fa" */
+      width: 340px;
+      height: 135px;
+      color: #ffffff;
+      font-family: "FuturaBookC", serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 23.77px;
+
+      &::after {
+        left: 140px;
+        top: -22px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 375px) {
+  .control {
+    background: linear-gradient(
+      to bottom,
+      #131313 0%,
+      #131313 772px,
+      #fff 350px,
+      #fff 100%
+    );
+
+    .control__title {
+      font-size: 22px;
+    }
+    .control__text {
+      /* Style for "At each fa" */
+      width: 340px;
+      height: 135px;
+      color: #ffffff;
+      font-family: "FuturaBookC", serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 23.77px;
+      &::before{
+       left: 0;
+      }
+    }
+    .control__button{
+      border-radius: 0;
+      width: 0;
+      flex-basis: 340px;
+    }
+
+    .container1 {
+      color: #ffffff;
+    }
+
+    .input {
+      .input__info {
+        color: #c4c4c4;
+        .input__text {
+          color: $white;
+          background-color: #131313;
+        }
+      }
+    }
+  }
+}

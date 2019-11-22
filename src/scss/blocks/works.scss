@@ -7,6 +7,7 @@
   padding-left: 102px;
   display: flex;
   flex-direction: row;
+  padding-bottom: 91px;
 }
 
 .works__container-left {
@@ -96,20 +97,31 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   margin-right: 10px;
+  &:hover, &:active {
+    background-color: darken( $white , 15%);
+    border-color: darken($white, 15%);
+  }
 }
 
 .arrows__dot--selected {
   width: 10px;
   height: 10px;
-  background-color: $white;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   margin-right: 10px;
+  &:hover, &:active {
+    background-color: darken( $white , 15%);
+    border-color: darken($white, 15%);
+  }
 }
 
 .arrows__left {
+
+
 }
 
 .arrows__right {
+
   transform: rotate(180deg);
 }
 
