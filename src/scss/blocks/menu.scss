@@ -1,0 +1,43 @@
+.menu {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.menu__element {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  color: $white;
+  font-family: "FuturaBookC", serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 1500ms;
+  transition-property: color;
+
+  &:hover {
+    color: $second;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu__element {
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+}

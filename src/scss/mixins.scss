@@ -1,0 +1,93 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin adaptive-video() {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+@mixin button($w: 207px, $h: 51px) {
+  background-color: $second;
+  border: 1px solid transparent;
+  width: $w;
+  height: $h;
+  font-size: 13px;
+  font-family: "FuturaDemiC", serif;
+  color: $white;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  appearance: none;
+  transition-property: background-color, border-color;
+  transition-duration: 500ms;
+  @content;
+
+  &:hover, &:active {
+    background-color: darken($second, 15%);
+    border-color: darken($second, 15%);
+  }
+
+}
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@mixin responsive-tlt($minFz, $maxFz) {
+
+  $raznostFz: strip-units($maxFz - $minFz);
+
+  @media (max-width: 320px) {
+    font-size: $minFz
+  }
+
+  @include media(xl) {
+    font-size: $maxFz
+  }
+
+  @include media-breakpoint-between('320', lg) {
+    font-size: calc(#{$minFz} + #{$raznostFz} * (100vw - 320px) / 790)
+  }
+}

@@ -1,0 +1,133 @@
+
+.works__wrap{
+  padding-top: 107px;
+  padding-left: 112px;
+  display: flex;
+  flex-direction: row;
+}
+
+.works__container-left{
+  max-width: 418px;
+
+}
+
+.works__container-right{
+  overflow: hidden;
+
+}
+
+.works__title{
+color: $second;
+  max-height: 67px;
+  font-family: "YesevaOne", serif;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: -1.89px;
+  line-height: 37.97px;
+  text-transform: uppercase;
+  max-width: 160px;
+
+}
+
+.works__list{
+  list-style: none;
+}
+
+.works__text{
+  max-height: 87px;
+  color: #ffffff;
+  font-family: "FuturaBookC", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.53px;
+  max-width: 413px;
+}
+
+.works__name{
+  color: $second;
+  min-height: 23px;
+  font-family: "YesevaOne", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.31px;
+  text-transform: uppercase;
+}
+
+.works__description{
+  min-height: 43px;
+  color: #ffffff;
+  font-family: "FuturaBookC", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.09px;
+
+}
+
+.works__arrows{
+  display: flex;
+
+  flex-direction: row;
+}
+
+.arrows__dot{
+  width: 10px;
+  height: 10px;
+   background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 50%;
+   margin-right: 10px;
+
+}
+
+.arrows__dot--selected{
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.arrows__left{
+}
+
+.arrows__right{
+
+  transform: rotate(180deg);
+}
+
+.works__towns{
+padding-bottom: 45px;
+}
+
+.towns_links{
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "YesevaOne", serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19.69px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 1500ms;
+  transition-property: color;
+  padding-right: 60px;
+  padding-bottom: 5px;
+
+  &:hover {
+    color: $second;
+    border-bottom: 1px solid $second;
+  }
+
+  &:last-child{
+    padding-right: 0;
+  }
+
+}
+
+.works__photo{
+  display:flex;
+  flex-direction: row;
+
+  :nth-child(1){
+    margin-right: 21px;
+  }
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+  font-size: 16px;
+  color: $white;
+}
+
+body {
+  font-family: 'FuturaBookC', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.container {
+  @include min-max(320px, 100%px, 0);
+  //background: linear-gradient(to bottom, #131313 1864px, #ffffff 4060px,#131313 1616px, #ffffff 100%);
+  //background: linear-gradient(to bottom, #131313 0%, #131313 1864px, #fff 1864px, #fff 100%);
+  background-color: $primary;
+}
+
+.wrap {
+  @include min-max(320px,1438px, 0);
+  //background: linear-gradient(to bottom, #131313 0%, #131313 1864px, #fff 1864px, #fff 100%);
+}
