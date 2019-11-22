@@ -1,23 +1,25 @@
+.works {
+  background-color: #131313;
+}
 
-.works__wrap{
+.works__wrap {
   padding-top: 107px;
-  padding-left: 112px;
+  padding-left: 102px;
   display: flex;
   flex-direction: row;
 }
 
-.works__container-left{
-  max-width: 418px;
-
+.works__container-left {
+  min-width: 430px;
+  margin-right: 60px;
 }
 
-.works__container-right{
+.works__container-right {
   overflow: hidden;
-
 }
 
-.works__title{
-color: $second;
+.works__title {
+  color: $second;
   max-height: 67px;
   font-family: "YesevaOne", serif;
   font-size: 27px;
@@ -27,13 +29,22 @@ color: $second;
   text-transform: uppercase;
   max-width: 160px;
 
+  ::before{
+    content: "";
+    display: inline-block;
+    width: 52px;
+    margin: 0 50px 0 -100%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    background-color: $second;
+  }
 }
 
-.works__list{
+.works__list {
   list-style: none;
 }
 
-.works__text{
+.works__text {
   max-height: 87px;
   color: #ffffff;
   font-family: "FuturaBookC", serif;
@@ -43,7 +54,7 @@ color: $second;
   max-width: 413px;
 }
 
-.works__name{
+.works__name {
   color: $second;
   min-height: 23px;
   font-family: "YesevaOne", serif;
@@ -53,32 +64,30 @@ color: $second;
   text-transform: uppercase;
 }
 
-.works__description{
+.works__description {
   min-height: 43px;
   color: #ffffff;
   font-family: "FuturaBookC", serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 21.09px;
-
 }
 
-.works__arrows{
+.works__arrows {
   display: flex;
 
   flex-direction: row;
 }
 
-.arrows__dot{
+.arrows__dot {
   width: 10px;
   height: 10px;
-   background-color: rgba(255, 255, 255, 0.3);
-   border-radius: 50%;
-   margin-right: 10px;
-
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-.arrows__dot--selected{
+.arrows__dot--selected {
   width: 10px;
   height: 10px;
   background-color: $white;
@@ -86,19 +95,18 @@ color: $second;
   margin-right: 10px;
 }
 
-.arrows__left{
+.arrows__left {
 }
 
-.arrows__right{
-
+.arrows__right {
   transform: rotate(180deg);
 }
 
-.works__towns{
-padding-bottom: 45px;
+.works__towns {
+  padding-bottom: 45px;
 }
 
-.towns_links{
+.towns_links {
   color: rgba(255, 255, 255, 0.3);
   font-family: "YesevaOne", serif;
   font-size: 14px;
@@ -117,17 +125,25 @@ padding-bottom: 45px;
     border-bottom: 1px solid $second;
   }
 
-  &:last-child{
+  &:last-child {
     padding-right: 0;
   }
-
 }
 
-.works__photo{
-  display:flex;
+.works__photo {
+  position: relative;
+  display: flex;
   flex-direction: row;
 
-  :nth-child(1){
+  :nth-child(1) {
     margin-right: 21px;
   }
+  .works__photo-play{
+    position: absolute;
+    content: "";
+    background: url("../assets/image/desktop/play_works.png");
+    width: 55px;
+    height: 55px;
+  }
 }
+

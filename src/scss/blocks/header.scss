@@ -55,6 +55,13 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px 0 25px;
+    .header__phone{
+      padding-top: 5px;
+    }
+    .header__button{
+      margin-top: 10px;
+    }
+
   }
 
   .header__logo {
@@ -84,6 +91,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 23px 18px;
+    .header__phone{
+      padding-top: 0;
+    }
   }
   .header__logo {
     list-style: none;

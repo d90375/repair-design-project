@@ -24,5 +24,10 @@ body {
 
 .wrap {
   @include min-max(320px,1438px, 0);
+  overflow: hidden;
   //background: linear-gradient(to bottom, #131313 0%, #131313 1864px, #fff 1864px, #fff 100%);
+}
+
+.main-container{
+  background-color: #ffffff;
 }
