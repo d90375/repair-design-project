@@ -269,7 +269,7 @@
                   type="text"
                   size="40"
                   value="What is your name:"
-                />
+                  required/>
               </div>
               <div class="input__info request_input__info">
                 <span class="input__title request_input__title">Phone</span>
@@ -278,7 +278,7 @@
                   type="text"
                   size="40"
                   value="Your phone number:"
-                />
+                  required/>
               </div>
               <input type="checkbox" id="iagree2" name="iagree" checked />
               <label for="iagree2"
@@ -294,7 +294,8 @@
       </section>
       <section class="styles">
         <div class="wrap styles_wrap">
-          <h2 class="style__title">We realize your wildest fantasies</h2>
+          <div class="styles__left-container">
+          <h2 class="styles__title">We realize your wildest fantasies</h2>
           <ul class="styles__list">
             <li class="styles__item">American classic</li>
             <li class="styles__item">Empire</li>
@@ -307,10 +308,13 @@
             <li class="styles__item">High tech</li>
             <li class="styles__item">Eclecticism</li>
           </ul>
+          </div>
+          <div class="styles__right-container">
           <img src="./assets/image/desktop/fantasiesPhoto1.png" alt="" />
           <img src="./assets/image/desktop/fantasiesPhoto2.png" alt="" />
           <img src="./assets/image/desktop/fantasiesPhoto3.png" alt="" />
           <img src="./assets/image/desktop/fantasiesPhoto4.png" alt="" />
+          </div>
         </div>
       </section>
       <section class="ladder">
@@ -321,61 +325,63 @@
           more modern, but also significantly reduces the cost of materials and
           reduces the time of repair work.
         </p>
-        <div class="ladder__container">
-          <div class="description description--four">
-            <div class="description__white">
-              <ul class="description__list">
-                <li class="list__title">Mini</li>
-                <li class="list__item">Measurement drawing</li>
-                <li class="list__item">Redevelopment</li>
-                <li class="list__item">Layout of furniture</li>
-                <li class="list__item">Plumbing plan. equipment</li>
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card__text card__text--four">
+              <ul class="card__list">
+                <li class="card__title">Mini</li>
+                <li class="card__item">Measurement drawing</li>
+                <li class="card__item">Redevelopment</li>
+                <li class="card__item">Layout of furniture</li>
+                <li class="card__item">Plumbing plan. equipment</li>
               </ul>
-              <button class="description__button"></button>
+              <button class="card__button">150 rub / m2</button>
             </div>
           </div>
-          <div class="description description--five">
-            <div class="description__white">
-              <ul class="description__list">
-                <li class="list__item">Standard</li>
-                <li class="list__item">Measurement drawing</li>
-                <li class="list__item">Redevelopment</li>
-                <li class="list__item">Layout of furniture</li>
-                <li class="list__item">Plan of ceilings</li>
-                <li class="list__item">Floor Plan</li>
-                <li class="list__item">Electricians plan</li>
-                <li class="list__item">Lighting plan</li>
+          <div class="card">
+            <div class="card__text card__text--five">
+              <ul class="card__list">
+                <li class="card__title">Standard</li>
+                <li class="card__item">Measurement drawing</li>
+                <li class="card__item">Redevelopment</li>
+                <li class="card__item">Layout of furniture</li>
+                <li class="card__item">Plan of ceilings</li>
+                <li class="card__item">Floor Plan</li>
+                <li class="card__item">Electricians plan</li>
+                <li class="card__item">Lighting plan</li>
               </ul>
-              <button class="description__button"></button>
+              <button class="card__button">400 rub / m2</button>
             </div>
           </div>
-          <div class="description description--six">
-            <div class="description__white">
-              <ul class="description__list">
-                <li class="list__item">Measurement drawing</li>
-                <li class="list__item">Redevelopment</li>
-                <li class="list__item">Layout of furniture</li>
-                <li class="list__item">Plan of ceilings</li>
-                <li class="list__item">Floor Plan</li>
-                <li class="list__item">Electricians plan</li>
-                <li class="list__item">Lighting plan</li>
-                <li class="list__item">Wall reamers</li>
-                <li class="list__item">3D visualization</li>
-                <li class="list__item">Bill of materials</li>
-                <li class="list__item">
+          <div class="card">
+            <div class="card__text card__text--six">
+              <ul class="card__list">
+                <li class="card__title">Measurement drawing</li>
+                <li class="card__item">Redevelopment</li>
+                <li class="card__item">Layout of furniture</li>
+                <li class="card__item">Plan of ceilings</li>
+                <li class="card__item">Floor Plan</li>
+                <li class="card__item">Electricians plan</li>
+                <li class="card__item">Lighting plan</li>
+                <li class="card__item">Wall reamers</li>
+                <li class="card__item">3D visualization</li>
+                <li class="card__item">Bill of materials</li>
+                <li class="card__item">
                   Departure for a selection of materials
                 </li>
-                <li class="list__item">Furniture selection</li>
+                <li class="card__item">Furniture selection</li>
               </ul>
-              <button class="description__button"></button>
+              <button class="card__button">900 rub / m2</button>
             </div>
           </div>
         </div>
       </section>
       <section class="steps">
-        <h2 class="steps__title"></h2>
-        <p class="steps__text-top"></p>
-        <span class="steps_number"></span>
+        <div class="steps__left-container">
+        <h2 class="steps__title">How we are working</h2>
+        <p class="steps__text-top">6 steps to
+          the goal</p>
+        <span class="steps_number">1/6</span>
         <p class="steps_departure-title">Departure for measurements premises</p>
         <p class="steps_departure-text">
           After your call, we go to you to consult and measure the premises of
@@ -394,25 +400,28 @@
           <div class="arrows__dot"></div>
           <div class="arrows__dot"></div>
           <div class="arrows__dot"></div>
-          <div
-            class="arrows__left"
-         >
+          <div class="arrows__left">
           </div>
+        </div>
+        </div>
+          <div class="steps__right-container">
           <div class="steps__grid">
-            <span class="grid__title">01</span
-            ><span class="grid__info">Departure to room measurements</span>
-            <span class="grid__title">02</span
-            ><span class="grid__info">Compilation estimates</span>
-            <span class="grid__title">03</span
-            ><span class="grid__info">Development project design</span>
-            <span class="grid__title">04</span
-            ><span class="grid__info">Purchasing Supplies</span>
-            <span class="grid__title">05</span
-            ><span class="grid__info">Repair finishing work</span>
-            <span class="grid__title">06</span
-            ><span class="grid__info">Приемка-сдача работ</span>
+            <p class="grid__title">01</p
+            ><p class="grid__info">Departure to room measurements</p>
+            <p class="grid__title">02</p
+            ><p class="grid__info">Compilation estimates</p>
+            <p class="grid__title">03</p
+            ><p class="grid__info">Development project design</p>
+            <p class="grid__title">04</p
+            ><p class="grid__info">Purchasing Supplies</p>
+            <p class="grid__title">05</p
+            ><p class="grid__info">Repair finishing work</p>
+            <p class="grid__title">06</p
+            ><p class="grid__info">Приемка-сдача работ</p>
           </div>
-          <img src="./assets/image/desktop/stepsPhoto1.png" alt="" />
+            <div class="img-container">
+          <img class="grid__img" src="./assets/image/desktop/stepsPhoto1.png" alt="" />
+            </div>
         </div>
       </section>
       <section class="team">

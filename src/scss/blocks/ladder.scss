@@ -1,0 +1,73 @@
+.ladder {
+  background: linear-gradient(
+                  to bottom,
+                  #ffffff 0%,
+                  #ffffff 400px,
+                  #131313 400px,
+                  #131313 100%
+  );
+
+  .card-wrap{
+
+    .card{
+      &:nth-child(1){
+        background: url("../assets/image/desktop/descriptionPhoto4.png");
+      }
+      &:nth-child(2){
+        background: url("../assets/image/desktop/descriptionPhoto5.png");
+      }
+      &:nth-child(3){
+        background: url("../assets/image/desktop/descriptionPhoto6.png");
+      }
+
+      .card__text{
+        &:nth-child(1){
+          /* Style for "Rectangle" */
+          width: 330px;
+          height: 212px;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          background-color: #ffffff;
+
+        }
+        &:nth-child(2){
+          /* Style for "Rectangle" */
+          width: 330px;
+          height: 287px;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          background-color: #ffffff;
+
+        }
+        &:nth-child(3){
+          /* Style for "Rectangle" */
+          width: 330px;
+          height: 415px;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          background-color: #ffffff;
+
+        }
+
+        .card__list
+        {
+
+        }
+      }
+    }
+  }
+}
+
+.ladder__title {
+  text-align: center;
+  color: #181818;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-transform: uppercase;
+}
+
+.ladder__icon {
+  margin: 0 auto;
+  background: url("../assets/image/icon/pencil.svg");
+  width: 114px;
+  height: 29px;
+}

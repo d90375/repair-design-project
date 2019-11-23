@@ -1,0 +1,99 @@
+.steps {
+  display: flex;
+  background: #131313;
+  justify-content: space-between;
+}
+
+.steps__left-container{
+  flex-basis: 337px;
+  margin-left: 99px;
+}
+.steps__title {
+  color: #ffffff;
+  font-family: "FuturaDemiC", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-transform: uppercase;
+}
+
+.steps__text-top {
+  position: relative;
+  color: #e3b873;
+  font-family: "Yeseva One", serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 37.97px;
+  text-transform: uppercase;
+  &::before {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 70px;
+    height: 2px;
+    content: '';
+  }
+}
+
+.steps_number {
+  color: #ffffff;
+  font-family: "Yeseva One", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.31px;
+  text-transform: uppercase;
+}
+
+.steps_departure-title {
+  color: #e3b873;
+  font-family: "Yeseva One", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.85px;
+  text-transform: uppercase;
+}
+
+.steps_departure-text {
+  color: #ffffff;
+  font-family: "FuturaBookC", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26.37px;
+}
+
+.steps__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.grid__title{
+  color: #ffffff;
+  font-family: "Yeseva One", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-transform: uppercase;
+}
+
+.grid__info{
+  color: #ffffff;
+  font-family: "FuturaBookC", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.46px;
+}
+
+.grid__img{
+  /* Style for "image 3" */
+  width: 100%;
+  height: auto;
+}
+
+.img-container{
+  max-width: 775px;
+  max-height: 388px;
+}

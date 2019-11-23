@@ -1,0 +1,43 @@
+.styles{
+  background: url("../assets/image/desktop/background/styles__background.png");
+  width: 1440px;
+  height: 865px;
+}
+
+.styles_wrap{
+  display: flex;
+  flex-direction: row;
+}
+.styles__left-container{
+
+}
+.styles__right-container{
+  display: flex;
+  flex-flow: wrap column;
+  &:nth-child(3){
+    align-self: flex-end;
+  }
+}
+.styles__title{
+  color: #e3b873;
+  font-family: "Yeseva One", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 37.97px;
+  text-transform: uppercase;
+}
+
+.styles__list{
+  list-style-type: none;
+  color: #ffffff;
+  font-family: "Proxima Nova", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32.81px;
+  .styles__item{
+    &:hover {
+      color: $second;
+      text-decoration: underline;
+    }
+  }
+}
