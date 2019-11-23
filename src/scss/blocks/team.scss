@@ -1,0 +1,92 @@
+.team{
+  background: #131313;
+}
+
+.team__title{
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-transform: uppercase;
+}
+
+.team__icon{
+  margin: 0 auto;
+  background: url("../assets/image/icon/group.svg");
+  width: 114px;
+  height: 29px;
+}
+
+.team__text{
+  text-align: center;
+  color: #ffffff;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+}
+
+.team_container{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+
+.team__photo{
+  position: relative;
+  width: 272px;
+  height: 358px;
+  &:nth-child(1){
+    background: url("../assets/image/desktop/avatar1.png");
+  }
+  &:nth-child(2){
+    background: url("../assets/image/desktop/avatar2.png");
+  }
+  &:nth-child(3){
+    background: url("../assets/image/desktop/avatar3.png");
+  }
+}
+
+.photo__icon{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 5px 20px rgba(227, 184, 115, 0.5);
+  background-color: #e3b873;
+  &:nth-child(1) {
+    background: url("../assets/image/icon/idea.svg") no-repeat center;
+  }
+  &:nth-child(2){
+    background: url("../assets/image/icon/pencil.svg") no-repeat center;
+  }
+  &:nth-child(3){
+    background: url("../assets/image/icon/portfolio.svg") no-repeat center;
+  }
+}
+
+.team__info{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: #363636;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35.16px;
+  max-width: 558px;
+  &::after{
+      background-color: #e3b873;
+      position: absolute;
+      left: 0;
+      top: -25px;
+      width: 55px;
+      height: 2px;
+      content: '';
+  }
+}
+
+
