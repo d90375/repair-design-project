@@ -1,4 +1,5 @@
 .header {
+  background-color: #181818;
 }
 
 .header__wrap {
@@ -35,17 +36,9 @@
 }
 
 .header__button{
-  width: 161px;
-  height: 37px;
-  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
-  border-radius: 2px;
-  background-color: $second;
-  color: $white;
-  border-style: none;
-  font-family: "FuturaDemiC", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  text-transform: uppercase;
+  @include button(161px,37px){
+
+  }
 }
 
 
@@ -71,7 +64,7 @@
 
 }
 
-@media (max-width: 630px) {
+@media (max-width: 768px) {
 
   .header__wrap {
     flex-direction: column;

@@ -1,5 +1,5 @@
 .works {
-  background-color: #131313;
+  background-color: $primary;
 }
 
 .works__wrap {
@@ -25,9 +25,9 @@
   margin-top: 60px;
   color: $second;
   max-height: 67px;
-  font-family: "YesevaOne", serif;
+  font-family: "Yeseva One", serif;
   font-size: 27px;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: -1.89px;
   line-height: 37.97px;
   text-transform: uppercase;

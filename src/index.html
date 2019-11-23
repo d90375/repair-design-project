@@ -14,8 +14,7 @@
     <title>Document</title>
   </head>
   <body>
-   <div class="main-container">
-    <div class="container1">
+    <div class="container">
       <header class="header">
         <div class="wrap header__wrap">
           <a href="#" class="header__logo">IC "Repair Design Project"</a>
@@ -47,8 +46,6 @@
           <button class="header__button">Request a call</button>
         </div>
       </header>
-    </div>
-    <div class="wrap">
       <section class="banner">
         <aside class="banner__sidebar">
           <a class="sidebar__text" href="#">instagram</a>
@@ -56,7 +53,6 @@
             <span class="banner__scroll-down__text">scroll down</span>
           </div>
         </aside>
-        <div class="banner__container">
           <div class="banner__info">
             <h1 class="banner__title">
               Turnkey Repair in the city of
@@ -72,7 +68,6 @@
               SUBMIT YOUR APPLICATION
             </button>
           </div>
-        </div>
       </section>
       <section class="works">
         <div class="wrap works__wrap">
@@ -119,7 +114,7 @@
                 src="assets/image/icon/arrow-long.svg"
                 alt=""
               />
-              <div class="arrows__dot--selected"></div>
+              <div class="arrows__dot"></div>
               <div class="arrows__dot"></div>
               <div class="arrows__dot"></div>
               <img
@@ -185,13 +180,14 @@
             />
           </div>
           <button class="control__button">submit</button>
-          <label class="container1">I agree to the processing of personal data
+          <label class="container_checkbox">I agree to the processing of personal data
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
           </label>
         </div>
       </section>
       <section class="types">
+        <div class="types__wrap wrap">
         <h2 class="types__title">TYPES OF REPAIR</h2>
         <div class="types__icon"></div>
         <div class="card-wrap">
@@ -240,6 +236,7 @@
               <button class="card__button">from 4000 rub / m2</button>
             </div>
           </div>
+        </div>
         </div>
       </section>
       <section class="circle">
@@ -456,13 +453,15 @@
         </p>
       </section>
       <section class="clients">
-        <h2 class="clients__title"></h2>
+        <h2 class="clients__title">our clients</h2>
         <div class="clients__icon"></div>
-        <p class="clients__text"></p>
+        <p class="clients__text-title">80% of our customers recommend us to their
+          friends and family.</p>
         <div class="clients__container">
           <div class="clients__background clients__background--one">
-            <div class="clients__photo-text"></div>
-            <div class="clients__info">
+            <div class="clients__photo"></div>
+            <span class="clients__text">Fedosova Maria Konstantinovna</span>
+            <p class="clients__info">
               I want to thank the guys for their work. WE PUT YOUR SHOWER PART
               IN REPAIR. I am VERY grateful that I referred to the repair as to
               my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS
@@ -470,13 +469,14 @@
               TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL.
               WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED.
               PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.
-            </div>
-            <div class="clients__button">40 m2</div>
-            <div class="clients__button">48 DAYS</div>
+            </p>
+            <button class="clients__button">40 m2</button>
+            <button class="clients__button">48 DAYS</button>
           </div>
           <div class="clients__background clients__background--two">
-            <div class="clients__photo-text"></div>
-            <div class="clients__info">
+            <div class="clients__photo"></div>
+            <span class="clients__text">Afanasyev Sergey Alexandrovich</span>
+            <p class="clients__info">
               I want to thank the guys for their work. WE PUT YOUR SHOWER PART
               IN REPAIR. I am VERY grateful that I referred to the repair as to
               my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS
@@ -484,13 +484,14 @@
               TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL.
               WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED.
               PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.
-            </div>
-            <div class="clients__button">90 м2</div>
-            <div class="clients__button">128 DAYS</div>
+            </p>
+            <button class="clients__button">90 м2</button>
+            <button class="clients__button">128 DAYS</button>
           </div>
           <div class="clients__background clients__background--three">
-            <div class="clients__photo-text"></div>
-            <div class="clients__info">
+            <div class="clients__photo"></div>
+            <span class="clients__text">Kiriev Egor Leonidovich</span>
+            <p class="clients__info">
               I want to thank the guys for their work. WE PUT YOUR SHOWER PART
               IN REPAIR. I am VERY grateful that I referred to the repair as to
               my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS
@@ -498,15 +499,15 @@
               TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL.
               WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED.
               PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.
-            </div>
-            <div class="clients__button">56 м2</div>
-            <div class="clients__button">86 DAYS</div>
+            </p>
+            <button class="clients__button">56 м2</button>
+            <button class="clients__button">86 DAYS</button>
           </div>
         </div>
       </section>
       <section class="questions">
         <div class="questions__background">
-          <h2 class="questions__title"></h2>
+          <h2 class="questions__title">have any questions?</h2>
           <div class="questions__container">
             <div class="input__info questions_input__info">
               <span class="input__title questions_input__title">Name</span>
@@ -535,10 +536,10 @@
                 value="I want to know:"
               />
             </div>
-            <input type="checkbox" id="iagree3" name="iagree" checked />
-            <label for="iagree3"
-              >I agree to the processing of personal data</label
-            >
+            <label class="container_checkbox">I agree to the processing of personal data
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
             <button class="questions__button">submit</button>
           </div>
         </div>
@@ -552,8 +553,6 @@
         </div>
         <img src="./assets/image/desktop/map.png" alt="" />
       </section>
-    </div>
-    <div class="container1">
       <footer class="footer">
         <div class="wrap header_wrap">
           <a href="#" class="header__logo">IC "Repair Design Project"</a>
@@ -585,6 +584,5 @@
         </div>
       </footer>
     </div>
-   </div>
   </body>
 </html>

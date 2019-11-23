@@ -1,8 +1,8 @@
 .control {
   background: linear-gradient(
     to bottom,
-    #131313 0%,
-    #131313 350px,
+    #181818 0%,
+    #181818 350px,
     #fff 350px,
     #fff 100%
   );
@@ -100,7 +100,7 @@
     }
   }
   /* Customize the label (the container) */
-  .container1 {
+  .container_checkbox {
     margin-top: 37px;
     display: block;
     position: relative;
@@ -121,7 +121,7 @@
   }
 
   /* Hide the browser's default checkbox */
-  .container1 input {
+  .container_checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -140,12 +140,12 @@
   }
 
   /* On mouse-over, add a grey background color */
-  .container1:hover input ~ .checkmark {
+  .container_checkbox:hover input ~ .checkmark {
     background-color: #ccc;
   }
 
   /* When the checkbox is checked, add a blue background */
-  .container1 input:checked ~ .checkmark {
+  .container_checkbox input:checked ~ .checkmark {
     background-color: #e3b873;
   }
 
@@ -157,12 +157,12 @@
   }
 
   /* Show the checkmark when checked */
-  .container1 input:checked ~ .checkmark:after {
+  .container_checkbox input:checked ~ .checkmark:after {
     display: block;
   }
 
   /* Style the checkmark/indicator */
-  .container1 .checkmark:after {
+  .container_checkbox .checkmark:after {
     left: 6px;
     top: 1px;
     width: 5px;
@@ -213,7 +213,7 @@
       color: $white;
     }
 
-    .container1 {
+    .container_checkbox {
       color: #ffffff;
     }
 
@@ -289,7 +289,7 @@
       flex-basis: 340px;
     }
 
-    .container1 {
+    .container_checkbox {
       color: #ffffff;
     }
 
