@@ -6,99 +6,102 @@
     #fff 350px,
     #fff 100%
   );
+}
 
-  .control__title {
-    text-align: center;
-    color: #ffffff;
-    font-family: "YesevaOne", serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28.13px;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
+.control__title {
+  text-align: center;
+  color: #ffffff;
+  font-family: "YesevaOne", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
 
-  .control__icon {
-    margin: 12px auto 32px auto;
-    background: url("../assets/image/icon/camera.svg");
-    height: 29px;
-    width: 113px;
+.control__icon {
+  margin: 12px auto 32px auto;
+  background: url("../assets/image/icon/camera.svg");
+  height: 29px;
+  width: 113px;
+}
+.video-wrap {
+  margin: 0 auto 150px auto;
+  max-width: 817px;
+  max-height: 434px;
+}
+.control__video {
+  @include adaptive-video();
+}
+.control__text {
+  position: relative;
+  margin: 0 auto 91px auto;
+  max-width: 681px;
+  text-align: center;
+  color: #363636;
+  font-family: "FuturaBookC", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35.16px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 310px;
+    top: -26px;
+    height: 2px;
+    width: 55px;
+    background-color: #e3b873;
   }
-  .video-wrap {
-    margin: 0 auto 150px auto;
-    max-width: 817px;
-    max-height: 434px;
-  }
-  .control__video {
-    @include adaptive-video();
-  }
-  .control__text {
-    position: relative;
-    margin: 0 auto 91px auto;
-    max-width: 681px;
-    text-align: center;
-    color: #363636;
-    font-family: "FuturaBookC", serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 35.16px;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 310px;
-      top: -26px;
-      height: 2px;
-      width: 55px;
-      background-color: #e3b873;
-    }
-  }
+}
 
-  .input {
-    flex-grow: 1;
-    margin: 0 auto;
+.input {
+  flex-grow: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+
+  .input__info {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
+    flex-direction: column;
+    flex-basis: 233px;
+    margin-right: 56px;
 
-    .input__info {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 233px;
-      margin-right: 56px;
-
-      .input__title {
-        color: rgba(54, 54, 54, 0.5);
-        font-family: "FuturaBookC", serif;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 21.09px;
-      }
-
-      .input__text {
-        outline: 0;
-        border-width: 0 0 1px;
-        border-color: rgba(54, 54, 54, 0.3);
-        color: #363636;
-        font-family: "FuturaBookC", serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25.31px;
-      }
-    }
-  }
-
-  .control__button {
-    @include button(200px, 52px) {
-      color: #ffffff;
-      font-family: "FuturaDemiC", serif;
+    .input__title {
+      color: rgba(54, 54, 54, 0.5);
+      font-family: "FuturaBookC", serif;
       font-size: 15px;
+      font-weight: 500;
+      line-height: 21.09px;
+    }
+
+    .input__text {
+      outline: 0;
+      border-width: 0 0 1px;
+      border-color: rgba(54, 54, 54, 0.3);
+      color: #363636;
+      font-family: "FuturaBookC", serif;
+      font-size: 18px;
       font-weight: 400;
-      line-height: 26.37px;
-      text-transform: uppercase;
+      line-height: 25.31px;
     }
   }
+}
+
+.control__button {
+  @include button(200px, 52px) {
+    color: #ffffff;
+    font-family: "FuturaDemiC", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.37px;
+    text-transform: uppercase;
+  }
+}
+
+.control {
   /* Customize the label (the container) */
   .container_checkbox {
     margin-top: 37px;
@@ -182,7 +185,6 @@
     align-items: center;
     .video-wrap {
       margin: 0 auto 70px auto;
-
     }
 
     .input {
@@ -232,7 +234,6 @@
 
 @media (max-width: 720px) {
   .control {
-
     .control__title {
       font-size: 22px;
     }
@@ -253,7 +254,6 @@
         top: -22px;
       }
     }
-
   }
 }
 
@@ -279,11 +279,11 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 23.77px;
-      &::before{
-       left: 0;
+      &::before {
+        left: 0;
       }
     }
-    .control__button{
+    .control__button {
       border-radius: 0;
       width: 0;
       flex-basis: 340px;

@@ -161,7 +161,7 @@
               type="text"
               size="40"
               value="What is your name:"
-            />
+            required>
           </div>
           <div class="input__info control_input__info">
             <span class="input__title control_input__title">Phone</span>
@@ -170,7 +170,7 @@
               type="text"
               size="40"
               value="Your phone number:"
-            />
+            required>
           </div>
           <button class="control__button">submit</button>
           <label class="container_checkbox">I agree to the processing of personal data
@@ -235,22 +235,21 @@
       <section class="circle">
         <div class="wrap circle__wrap">
           <div class="circle__container">
-            <div class="circle__building">
-              <span class="circle__item--one"
-                >Our specialist will arrive for measurements per daycontact, or
-                appoint a date convenient for you</span
+            <div class="circle__ellipse">
+              <div class="circle__item circle__item--one"
+                ><div class="circle__O"></div><span class="circle__O-text">Our specialist will arrive for measurements per day contact, or
+                appoint a date convenient for you</span></div
               >
-              <span class="circle__item--two">Free metering</span>
-              <span class="circle__item--three">Free consultation</span>
-              <span class="circle__item--four"
-                >Get a cost estimate andthe timing of your future repairs</span
+              <div class="circle__item circle__item--two"><div class="circle__O"></div><span class="circle__O-text">Free metering</span></div>
+              <div class="circle__item circle__item--three"><div class="circle__O"></div><span class="circle__O-text">Free consultation</span></div>
+              <div class="circle__item circle__item--four"
+                ><div class="circle__O"></div><span class="circle__O-text">Get a cost estimate and the timing of your future repairs</span></div
               >
             </div>
           </div>
+          <div class="circle__req-wrap">
           <div class="circle__request">
-            <div class="request_title">
-              <span>Leave a request for freedeparture of the measurer</span>
-            </div>
+            <h3 class="request__title">Leave a request for free departure of the measurer</h3>
             <div class="input request__input">
               <div class="input__info request__input__info">
                 <span class="input__title request__input__title">Name</span>
@@ -270,15 +269,25 @@
                   value="Your phone number:"
                   required/>
               </div>
-              <input type="checkbox" id="iagree2" name="iagree" checked />
-              <label for="iagree2"
-                >I agree to the processing of personal data</label
-              >
-              <button class="request__button">submit</button>
+              <div class="input__info request_input__info">
+                <span class="input__title request_input__title">Email</span>
+                <input
+                        class="input__text request__input__text"
+                        type="text"
+                        size="40"
+                        value="Your email"
+                        required/>
+              </div>
+              <label class="container_checkbox">I agree to the processing of personal data
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <button class="request__button">Call the measurer</button>
             </div>
-            <span class="request__help"
-              >Help save 10 - 20% of the cost of materials</span
-            >
+          </div>
+          <div class="request__help"
+          >Help save 10 - 20% of the cost of materials<div class="request__piggy-img"></div></div
+          >
           </div>
         </div>
       </section>
