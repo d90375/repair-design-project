@@ -6,6 +6,9 @@
   //                #fff 350px,
   //                #fff 100%
   //);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .questions__background {
@@ -14,9 +17,16 @@
   height: 447px;
   background-color: #181818;
   margin: 0 auto;
+  :nth-child(3) {
+    max-width: 525px;
+    padding-left: 182px;
+    padding-top: 47px;
+  }
 }
 
 .questions__title {
+  margin: 0;
+  padding-top: 35px;
   text-align: center;
   color: #ffffff;
   font-family: "Yeseva One";
@@ -27,7 +37,9 @@
 }
 .questions__container {
   display: flex;
-  flex-flow: wrap column;
+  flex-direction: row;
+  padding-left: 182px;
+  padding-top: 44px;
 }
 .questions {
   .input__info {
@@ -45,44 +57,95 @@
   }
 }
 
+.questions_address {
+  display: block;
+  margin: 51px auto 25px auto;
+  max-width: 545px;
+  text-align: center;
+  color: #e3b873;
+  font-family: "Yeseva One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-transform: uppercase;
+}
+
+.questions_icon {
+  display: flex;
+  margin: 0 auto 42px auto;
+  .questions_icon--one {
+    background: $second;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+  }
+  .questions_icon--two {
+    background: $second;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+  }
+}
+
 .questions {
+  .request__input_info-name {
+    max-width: 235px;
+  }
+
+  .request_input_info-phone {
+    max-width: 235px;
+  }
   .input__info {
     display: flex;
     flex-direction: column;
-    flex-basis: 233px;
+    flex-basis: 100px;
     margin-right: 56px;
 
     .input__title {
-      color: rgba(54, 54, 54, 0.5);
+      color: rgba(255, 255, 255, 0.5);
       font-family: "FuturaBookC", serif;
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 21.09px;
     }
 
     .input__text {
       outline: 0;
       border-width: 0 0 1px;
-      border-color: rgba(54, 54, 54, 0.3);
-      color: #363636;
-      font-family: "FuturaBookC", serif;
+      border-color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+      background-color: #181818;
+      color: #ffffff;
+      font-family: "FuturaMediumC", serif;
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 25.31px;
     }
   }
+}
 
+.questions__button {
+  @include button(213px, 51px) {
+    margin-top: 113px;
+    margin-left: 342px;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
+    font-family: "FuturaDemiC", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.28px;
+    text-transform: uppercase;
+  }
+}
+.questions {
   /* Customize the label (the container) */
   .container_checkbox {
-    margin-top: 37px;
-    display: block;
+    top: 46px;
+    left: 300px;
     position: relative;
-    padding-left: 35px;
     cursor: pointer;
     /* Style for "I agree to" */
-    width: 260px;
-    height: 18px;
-    color: #181818;
+    color: #ffffff;
     font-family: "FuturaBookC", serif;
     font-size: 16px;
     font-weight: 400;
@@ -147,32 +210,5 @@
     transform: rotate(45deg);
   }
 }
-
-.questions_address {
-  text-align: center;
-  color: #e3b873;
-  font-family: "Yeseva One";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28.13px;
-  text-transform: uppercase;
-}
-
-.questions_icon {
-  .questions_icon--one {
-    background: url("../assets/image/icon/mail.svg");
-    width: 29px;
-    height: 29px;
-  }
-  .questions_icon--two {
-    background: url("../assets/image/icon/instagram.svg");
-    width: 29px;
-    height: 29px;
-  }
-}
-
-@media(max-width: 1100px) {
- .questions{
-   display: none;
- }
+@media (max-width: 1100px) {
 }
