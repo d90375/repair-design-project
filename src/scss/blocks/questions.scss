@@ -170,3 +170,9 @@
     height: 29px;
   }
 }
+
+@media(max-width: 1100px) {
+ .questions{
+   display: none;
+ }
+}

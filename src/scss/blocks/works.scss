@@ -233,6 +233,7 @@
 }
 
 @media (max-width: 1438px) {
+
   .works__photo {
     :nth-child(2) {
       display: none;
@@ -259,8 +260,9 @@
     max-height: 484px;
   }
   .works__mobile-img{
-    max-width: 100%;
-    height: auto;
+    display: none;
+    //max-width: 100%;
+    //height: auto;
   }
 }
 
