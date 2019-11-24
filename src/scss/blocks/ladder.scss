@@ -1,74 +1,52 @@
 .ladder {
   margin-top: 153px;
   background: linear-gradient(
-                  to bottom,
-                  #ffffff 0%,
-                  #ffffff 400px,
-                  #131313 400px,
-                  #131313 100%
+    to bottom,
+    #ffffff 0%,
+    #ffffff 400px,
+    #131313 400px,
+    #131313 100%
   );
 
-  .card-wrap{
-
-    .card{
-      &:nth-child(1){
+  .card-wrap {
+    .card {
+      &:nth-child(1) {
         background: url("../assets/image/desktop/descriptionPhoto4.png");
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         background: url("../assets/image/desktop/descriptionPhoto5.png");
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         background: url("../assets/image/desktop/descriptionPhoto6.png");
       }
 
+      .card__text--four {
+        /* Style for "Rectangle" */
+        width: 330px;
+        height: 212px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        background-color: #ffffff;
+      }
+      .card__text--five {
+        width: 330px;
+        height: 287px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        background-color: #ffffff;
+      }
+
+      .card__text--six {
+        width: 330px;
+        height: 385px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        background-color: #ffffff;
+      }
 
 
-        .card__text--four{
-          /* Style for "Rectangle" */
-          width: 330px;
-          height: 212px;
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-          background-color: #ffffff;
-
-        }
-        .card__text--five{
-          width: 330px;
-          height: 287px;
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-          background-color: #ffffff;
-
-        }
-
-        .card__text--six{
-          width: 330px;
-          height: 385px;
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-          background-color: #ffffff;
-        }
-        &:nth-child(4){
-          /* Style for "Rectangle" */
-          width: 330px;
-          height: 287px;
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-          background-color: #ffffff;
-
-        }
-        &:nth-child(5){
-          /* Style for "Rectangle" */
-
-
-        }
-
-        .card__list
-        {
-
-        }
-
+      .card__list {
+      }
     }
   }
 }
-
-
 
 .ladder__title {
   text-align: center;
@@ -87,7 +65,7 @@
   height: 29px;
 }
 
-.ladder__text{
+.ladder__text {
   margin: 23px auto 38px auto;
   max-width: 675px;
   text-align: center;
@@ -96,4 +74,108 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28.13px;
+}
+
+@media (max-width: 445px) {
+  .ladder {
+    margin-top: 0;
+    background: #131313;
+
+    .ladder__title{
+      padding-top: 40px;
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30.49px;
+      text-transform: uppercase;
+    }
+
+    .ladder__text{
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20.38px;
+    }
+
+    .card-wrap {
+      .card {
+        width: 340px;
+        height: 366px;
+
+        &:nth-child(1) {
+          background: url("../assets/image/desktop/descriptionPhoto1.png");
+          background-size: cover;
+        }
+
+        &:nth-child(2) {
+          background: url("../assets/image/desktop/descriptionPhoto2.png");
+          background-size: cover;
+        }
+
+        &:nth-child(3) {
+          background: url("../assets/image/desktop/descriptionPhoto3.png");
+          background-size: cover;
+        }
+
+        .card__text--four {
+          width: 270px;
+          height: 177px;
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+          background-color: #ffffff;
+        }
+        .card__text--five {
+          width: 270px;
+          height: 241px;
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+          background-color: #ffffff;
+        }
+
+        .card__text--six {
+          width: 270px;
+          height: 330px;
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+          background-color: #ffffff;
+        }
+
+        .card__text {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          background-color: white;
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+
+          .card__list {
+            margin-top: 25px;
+
+            .card__title {
+              list-style-type: none;
+              margin-bottom: 8px;
+              color: #363636;
+              font-family: "YesevaOne", serif;
+              font-size: 18px;
+              font-weight: bold;
+              line-height: 25.31px;
+            }
+
+            .card__item {
+              margin-left: 16px;
+            }
+          }
+
+          .card__button {
+            @include button(191px, 40px) {
+              border-radius: 0;
+              color: #ffffff;
+              font-family: "YesevaOne", serif;
+              font-size: 15px;
+              font-weight: bold;
+              line-height: 20.79px;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
 }
