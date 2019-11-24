@@ -89,4 +89,20 @@
   }
 }
 
+@media (max-width: 445px) {
+  .team__title{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30.49px;
+    text-transform: uppercase;
+  }
+  .team__text{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.38px;
+  }
+
+}
+
 
