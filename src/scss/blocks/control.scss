@@ -194,6 +194,7 @@
       }
     }
     .control__button {
+      margin-top: 62px;
       order: 4;
     }
     .container1 {
@@ -206,9 +207,9 @@
   .control {
     background: linear-gradient(
       to bottom,
-      #131313 0%,
-      #131313 1028px,
-      #fff 350px,
+      #181818 0%,
+      #181818 97%,
+      #fff 97%,
       #fff 100%
     );
     .control__text {
@@ -241,7 +242,7 @@
     .control__text {
       margin: 0 auto 33px auto;
       /* Style for "At each fa" */
-      width: 340px;
+      max-width: 340px;
       height: 135px;
       color: #ffffff;
       font-family: "FuturaBookC", serif;
@@ -261,18 +262,19 @@
   .control {
     background: linear-gradient(
       to bottom,
-      #131313 0%,
-      #131313 772px,
-      #fff 350px,
-      #fff 100%
+      #181818 0%,
+      #181818 97%,
+      #fff 50%,
+      #fff 97%
     );
 
     .control__title {
       font-size: 22px;
     }
     .control__text {
+      padding-left: 18px;
+      padding-right: 18px;
       /* Style for "At each fa" */
-      width: 340px;
       height: 135px;
       color: #ffffff;
       font-family: "FuturaBookC", serif;
@@ -297,6 +299,7 @@
       .input__info {
         color: #c4c4c4;
         .input__text {
+          font-size: 100%;
           color: $white;
           background-color: #131313;
         }

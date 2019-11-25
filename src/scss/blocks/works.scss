@@ -24,10 +24,10 @@
 }
 
 .works__title {
+  position: relative;
   margin-bottom: 33px;
   margin-top: 60px;
   color: $second;
-  max-height: 67px;
   font-family: "Yeseva One", serif;
   font-size: 27px;
   font-weight: 400;
@@ -35,15 +35,14 @@
   line-height: 37.97px;
   text-transform: uppercase;
   max-width: 160px;
-
-  ::before {
-    content: "";
-    display: inline-block;
-    width: 52px;
-    margin: 0 50px 0 -100%;
-    vertical-align: middle;
-    border-bottom: 1px solid;
+  &::before {
     background-color: $second;
+    position: absolute;
+    left: 200px;
+    top: 56px;
+    width: 92px;
+    height: 1px;
+    content: '';
   }
 }
 
@@ -60,7 +59,6 @@
 }
 
 .works__text {
-  max-height: 87px;
   color: #ffffff;
   font-family: "FuturaBookC", serif;
   font-size: 18px;
@@ -91,7 +89,6 @@
 .works__arrows {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
 }
 
 .arrows__dot {
@@ -207,6 +204,7 @@
     bottom: 207px;
     height: 55px;
     width: 55px;
+    cursor: pointer;
     &::after {
       content: " ";
       display: inline-block;
@@ -267,6 +265,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .works__container-left{
+   min-width: 100%;
+    max-width: 100%;
+  }
   .works__title{
     font-size: 22px;
     font-weight: 400;
@@ -275,17 +278,31 @@
     padding-top: 36px;
     text-align: center;
     margin: 0 auto;
+    &::before{
+      width: 0;
+      height: 0;
+    }
   }
 
   .works__text{
+    padding-left: 18px;
+    padding-right: 18px;
     padding-top: 22px;
     text-align: center;
     margin: 0 auto;
+    color: #ffffff;
+    max-width: 310px;
+    font-family: "FuturaBookC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.19px;
   }
   .works__mobile--hide{
     padding-top: 36px;
   }
   .works__list{
+    padding-left: 18px;
+    padding-right: 18px;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 16px;
@@ -295,5 +312,21 @@
   }
   .works__container-left {
     margin: 0 auto;
+  }
+  .works__name{
+
+    color: #e3b873;
+    font-family: "Yeseva One", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.4px;
+    text-transform: uppercase;
+  }
+  .works__description{
+    color: #ffffff;
+    font-family: "FuturaBookC", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.02px;
   }
 }

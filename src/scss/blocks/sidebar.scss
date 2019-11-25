@@ -1,16 +1,14 @@
 .banner__sidebar {
   position: relative;
-  background-color: #181818;
+  background-color: #131313;
   max-width: 82px;
   height: 707px;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .sidebar__text {
-
   text-decoration: none;
   transform: rotate(90deg);
   color: #e3b873;
@@ -19,6 +17,10 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover{
+    color: lighten($second,5%)
+  }
 
   &::before {
     content: "";
@@ -31,17 +33,16 @@
   }
 }
 
-.banner__scroll-down{
+.banner__scroll-down {
   background-color: $primary;
   position: absolute;
   height: 97px;
   width: 247px;
   bottom: -50px;
   left: 0;
+}
 
-  }
-
-.banner__scroll-down__text{
+.banner__scroll-down__text {
   color: #ffffff;
   font-family: "YesevaOne", serif;
   font-size: 14px;
@@ -51,34 +52,45 @@
   position: absolute;
   left: 49px;
   bottom: 40px;
+  cursor: pointer;
+
+  &:hover {
+    color: darken($white, 15%);
+
+    &::before{
+      background-color: darken($second,55%);
+    }
+  }
 
   &::before {
     position: absolute;
-    left: 110px;
-    bottom: -5px;
-    height: 33px;
-    width: 33px;
-    content: '';
+    left: 120px;
+    bottom: -3px;
+    height: 27px;
+    width: 27px;
+    content: "";
+    border: 1px solid $second;
     background: url("../assets/image/icon/arrow-circle.svg") center no-repeat;
+    border-radius: 50%;
     display: block;
+
   }
 }
 
 @media (max-width: 768px) {
-  .banner__sidebar{
-    display:none
+  .banner__sidebar {
+    display: none;
   }
-  .banner__scroll-down{
-    display:none;
+  .banner__scroll-down {
+    display: none;
   }
 }
 
 @media (max-width: 375px) {
-
-  .banner__sidebar{
-    display:none
+  .banner__sidebar {
+    display: none;
   }
-  .banner__scroll-down{
-    display:none;
+  .banner__scroll-down {
+    display: none;
   }
 }
