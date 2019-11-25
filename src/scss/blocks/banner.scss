@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-color: #181818;
   background-size: cover;
+
+  //#2 var for scaling background
+  //background: url("../assets/image/desktop/background/banner_backgroundNew.png") no-repeat 65% top, linear-gradient(#181818 100%,#181818 100%);
 }
 
 .banner__info {
@@ -68,7 +71,6 @@
     font-size: 23px;
     font-weight: 400;
     line-height: 30.55px;
-
   }
 
   .banner__text {
@@ -86,5 +88,4 @@
     padding-left: 18px;
     padding-right: 18px;
   }
-
 }

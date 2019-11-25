@@ -42,7 +42,6 @@
         background-color: #ffffff;
       }
 
-
       .card__list {
       }
     }
@@ -77,12 +76,32 @@
   line-height: 28.13px;
 }
 
+@media (max-width: 768px) {
+
+  .ladder {
+    margin-top: 0;
+    background: #181818;
+
+    .ladder__title{
+      padding-top: 50px;
+      margin-top: 0;
+      color: $white;
+    }
+    .ladder__text{
+      text-align: center;
+      padding-right: 18px;
+      padding-left: 18px;
+      color: $white;
+    }
+  }
+}
+
 @media (max-width: 445px) {
   .ladder {
     margin-top: 0;
     background: #131313;
 
-    .ladder__title{
+    .ladder__title {
       padding-top: 40px;
       margin-top: 0;
       color: #ffffff;
@@ -92,7 +111,7 @@
       text-transform: uppercase;
     }
 
-    .ladder__text{
+    .ladder__text {
       padding-left: 18px;
       padding-right: 18px;
       color: #ffffff;

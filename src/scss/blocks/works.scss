@@ -257,11 +257,6 @@
     max-width: 640px;
     max-height: 484px;
   }
-  .works__mobile-img{
-    display: none;
-    //max-width: 100%;
-    //height: auto;
-  }
 }
 
 @media (max-width: 768px) {
@@ -297,9 +292,9 @@
     font-weight: 400;
     line-height: 22.19px;
   }
-  .works__mobile--hide{
-    padding-top: 36px;
-  }
+
+
+
   .works__list{
     padding-left: 18px;
     padding-right: 18px;
@@ -328,5 +323,68 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 19.02px;
+  }
+
+  .works__imgMobile--hide {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 340px;
+  }
+  .playArrow__left {
+    cursor: pointer;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    bottom: 100px;
+    right: 290px;
+    background-color: #e3b873;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url("../assets/image/mobile/arrow.png");
+      top: 12px;
+      right: 16px;
+      width: 8px;
+      height: 12px;
+    }
+    &:hover {
+      background: darken($second, 15%);
+    }
+  }
+  .playArrow__right {
+    cursor: pointer;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    bottom: 100px;
+    right: 16px;
+    background-color: #e3b873;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url("../assets/image/mobile/arrow.png");
+      top: 12px;
+      right: 13px;
+      width: 8px;
+      height: 12px;
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      background: darken($second, 15%);
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .works__imgMobile--hide{
+    display: none;
   }
 }
