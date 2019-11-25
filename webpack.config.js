@@ -2,8 +2,9 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+
 module.exports = {
-  entry: "./src/index",
+  entry: "./src/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
@@ -23,12 +24,35 @@ module.exports = {
         })
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        loader: "file-loader",
+        options:  {
+          name: "[path][name].[ext]"
+        },
+      },
+      {
+        test: /.html$/,
+        use: [
+          "extract-loader",
+          {
+            loader: "html-loader",
+            options: {
+              attrs: "img:src"
+            }
+          },
+          "ejs-loader"
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ["file-loader"]
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
@@ -36,8 +60,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "src/index.html"
+      template: "./src/index.html"
     }),
-    new ExtractTextPlugin("style.css")
+    new ExtractTextPlugin("style.css"),
   ]
 };

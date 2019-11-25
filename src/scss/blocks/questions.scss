@@ -1,0 +1,324 @@
+.questions {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/image/desktop/background/footerBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.questions__background {
+  /* Style for "Rectangle" */
+  width: 884px;
+  height: 447px;
+  background-color: #181818;
+  margin: 0 auto;
+  :nth-child(3) {
+    max-width: 525px;
+    padding-left: 182px;
+    padding-top: 47px;
+  }
+}
+
+.questions__title {
+  margin: 0;
+  padding-top: 35px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-transform: uppercase;
+}
+.questions__container {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 182px;
+  padding-top: 44px;
+}
+.questions {
+  .input__info {
+  }
+}
+
+.questions__button {
+  @include button(201px, 52px) {
+    color: #ffffff;
+    font-family: "FuturaDemiC";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.37px;
+    text-transform: uppercase;
+  }
+}
+
+.questions_address {
+  display: block;
+  margin: 51px auto 25px auto;
+  max-width: 545px;
+  text-align: center;
+  color: #e3b873;
+  font-family: "Yeseva One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-transform: uppercase;
+}
+
+.questions_icon {
+  display: flex;
+  margin: 0 auto 42px auto;
+
+  .questions_icon--one {
+    position: relative;
+    background: $second;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    margin-right: 15px;
+    &::before {
+      content: "";
+      background: url("../assets/image/icon/mail.svg") no-repeat;
+      position: absolute;
+      height: 33px;
+      width: 33px;
+      top: 8px;
+      left: 7px;
+    }
+
+    &:hover {
+      background-color: darken($second, 15%);
+    }
+  }
+  .questions_icon--two {
+    background: $second;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../assets/image/icon/instagram.svg") no-repeat;
+      position: absolute;
+      height: 33px;
+      width: 33px;
+      top: 8px;
+      left: 8px;
+    }
+
+    &:hover {
+      background-color: darken($second, 15%);
+    }
+  }
+}
+
+.questions {
+  .request__input_info-name {
+    max-width: 235px;
+  }
+
+  .request_input_info-phone {
+    max-width: 235px;
+  }
+  .input__info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100px;
+    margin-right: 56px;
+
+    .input__title {
+      color: rgba(255, 255, 255, 0.5);
+      font-family: "FuturaBookC", serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21.09px;
+    }
+
+    .input__text {
+      outline: 0;
+      border-width: 0 0 1px;
+      border-color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+      background-color: #181818;
+      color: #ffffff;
+      font-family: "FuturaBookC", serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25.31px;
+    }
+  }
+}
+
+.questions__button {
+  @include button(213px, 51px) {
+    margin-top: 95px;
+    margin-left: 342px;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
+    font-family: "FuturaDemiC", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.28px;
+    text-transform: uppercase;
+  }
+}
+.questions {
+  /* Customize the label (the container) */
+  .container_checkbox {
+    top: 46px;
+    left: 36%;
+    position: relative;
+    cursor: pointer;
+    /* Style for "I agree to" */
+    color: #ffffff;
+    font-family: "FuturaBookC", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 19px;
+    width: 19px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container_checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container_checkbox input:checked ~ .checkmark {
+    background-color: #e3b873;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container_checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container_checkbox .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+#map {
+  margin: 0 auto 66px auto;
+  height: 466px;
+  width: 65vw;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .questions {
+    background: #181818;
+
+    .questions__background {
+      /* Style for "Rectangle" */
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .questions__container {
+      display: block;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .questions__button {
+      margin: 106px auto 0 auto;
+    }
+    .questions__title {
+      color: #ffffff;
+      font-family: "Yeseva One";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28.13px;
+      text-transform: uppercase;
+    }
+    .input__info {
+      margin: 0;
+      padding: 50px 50px 0 50px;
+      flex-basis: 0;
+      max-width: 100%;
+      .input__title {
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21.09px;
+      }
+
+      .input__text {
+        /* Style for "What is yo" */
+        color: #ffffff;
+        font-family: "FuturaBookC";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.31px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .questions{
+    .input__info{
+      padding: 50px 18px 0 18px;
+    }
+  }
+.questions {
+  .container_checkbox {
+    left: 12%;
+  }
+}
+  .questions_address{
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  #map {
+    margin: 135px auto 0px auto;
+    height: 225px;
+    width: 90vw;
+    position: relative;
+  }
+}

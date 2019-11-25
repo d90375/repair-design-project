@@ -1,0 +1,157 @@
+.types {
+}
+
+.types__title {
+  margin: 143px auto 13px auto;
+  color: #181818;
+  font-family: "YesevaOne", serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28.13px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.types__icon {
+  background: url("../assets/image/icon/hammer.svg");
+  margin: 0 auto 31px auto;
+  width: 114px;
+  height: 28px;
+}
+
+.card-wrap {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  /* Style for "• Dismantl" */
+  color: #959595;
+  font-family: "FuturaBookC", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26.37px;
+
+  .card {
+    position: relative;
+    width: 392px;
+    height: 421px;
+    margin-bottom: 430px;
+    &:nth-child(1) {
+      background: url("../assets/image/desktop/descriptionPhoto1.png");
+    }
+    &:nth-child(2) {
+      background: url("../assets/image/desktop/descriptionPhoto2.png");
+    }
+    &:nth-child(3) {
+      background: url("../assets/image/desktop/descriptionPhoto3.png");
+    }
+
+    .card__text {
+      position: absolute;
+      top: 70%;
+      left: 8%;
+      background-color: white;
+      height: 286px;
+      width: 330px;
+      box-shadow: 10px 10px 34px -22px rgba(0, 0, 0, 0.75);
+
+      .card__list {
+        margin-top: 25px;
+        .card__title {
+          list-style-type: none;
+          margin-bottom: 8px;
+          color: #363636;
+          font-family: "YesevaOne", serif;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 25.31px;
+        }
+        .card__item{
+          margin-left: 16px;
+        }
+      }
+      .card__button{
+        @include button(228px,54px) {
+          border-radius: 0;
+          color: #ffffff;
+          font-family: "YesevaOne", serif;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 25.31px;
+          text-transform: uppercase;
+        };
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-wrap {
+    .card {
+      margin-bottom: 240px;
+      }
+  }
+
+}
+
+@media (max-width: 445px) {
+  .card-wrap {
+    color: #959595;
+    font-family: "FuturaBookC", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22.07px;
+    .card {
+      width: 340px;
+      height: 366px;
+      &:nth-child(1) {
+        background: url("../assets/image/desktop/descriptionPhoto1.png");
+        background-size: cover;
+      }
+      &:nth-child(2) {
+        background: url("../assets/image/desktop/descriptionPhoto2.png");
+        background-size: cover;
+      }
+      &:nth-child(3) {
+        background: url("../assets/image/desktop/descriptionPhoto3.png");
+        background-size: cover;
+      }
+
+      .card__text {
+        position: absolute;
+        top: 60%;
+        left: 0;
+        background-color: white;
+        width: 270px;
+        height: 241px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+        .card__list {
+          margin-top: 25px;
+          .card__title {
+            list-style-type: none;
+            margin-bottom: 8px;
+            color: #363636;
+            font-family: "YesevaOne", serif;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 25.31px;
+          }
+          .card__item{
+            margin-left: 16px;
+          }
+        }
+        .card__button{
+          @include button(191px,40px) {
+            border-radius: 0;
+            color: #ffffff;
+            font-family: "YesevaOne", serif;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 20.79px;
+            text-transform: uppercase;
+          };
+        }
+      }
+    }
+  }
+
+}

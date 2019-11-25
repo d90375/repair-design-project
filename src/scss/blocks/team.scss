@@ -1,0 +1,220 @@
+.team {
+  background: linear-gradient(
+                  to bottom,
+                  #181818 0%,
+                  #181818 400px,
+                  #ffffff 400px,
+                  #ffffff 100%
+  );
+}
+
+.team__title {
+  margin-top: 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-transform: uppercase;
+}
+
+.team__icon {
+  margin: 0 auto;
+  background: url("../assets/image/icon/group.svg");
+  width: 114px;
+  height: 29px;
+}
+
+.team__text {
+  margin: 23px auto 73px auto ;
+  text-align: center;
+  max-width: 400px;
+  color: #ffffff;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.13px;
+}
+
+.team_container {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-evenly;
+}
+
+.team__photo {
+  position: relative;
+  width: 272px;
+  height: 358px;
+  margin-bottom: 167px;
+  &:nth-child(1) {
+    background: url("../assets/image/desktop/avatar1.png");
+  }
+  &:nth-child(2) {
+    background: url("../assets/image/desktop/avatar2.png");
+  }
+  &:nth-child(3) {
+    background: url("../assets/image/desktop/avatar3.png");
+  }
+}
+
+.photo__icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: -35px;
+  top: -35px;
+  box-shadow: 0 5px 20px rgba(227, 184, 115, 0.5);
+  background-color: #e3b873;
+}
+
+.photo__icon--one {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    width: 40px;
+    height: 45px;
+    background: url("../assets/image/icon/idea.svg") no-repeat center;
+  }
+}
+
+.photo__icon--two {
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    width: 40px;
+    height: 45px;
+    background: url("../assets/image/icon/design.svg") no-repeat center;
+  }
+}
+
+.photo__icon--three {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    width: 40px;
+    height: 45px;
+    background: url("../assets/image/icon/portfolio.svg") no-repeat center;
+  }
+}
+.photo__white-container {
+  position: absolute;
+  top: 280px;
+  left: 20px;
+  width: 233px;
+  height: 137px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+.photo__title {
+  display: block;
+  margin: 22px auto 0 auto;
+  text-align: center;
+  color: #181818;
+  font-family: "Yeseva One";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.31px;
+}
+
+.photo__info {
+  display: block;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  color: #959595;
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.42px;
+}
+
+.photo__button {
+  @include button(233px, 44px) {
+    border-radius: 0;
+    color: #ffffff;
+    font-family: "Yeseva One";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.8px;
+    text-transform: uppercase;
+  }
+}
+
+.team__info {
+  margin: 0 auto 0  auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: #363636;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35.16px;
+  max-width: 558px;
+  &::after {
+    background-color: #e3b873;
+    position: absolute;
+    left: 250px;
+    top: -25px;
+    width: 55px;
+    height: 2px;
+    content: "";
+  }
+}
+@media (max-width: 1000px) {
+  .team__photo{
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 445px) {
+  .team{
+    background: #181818;
+  }
+  .team__photo{
+    width: 304px;
+    height: 358px;
+    margin-left: 40px;
+    &:nth-child(1) {
+      background: url("../assets/image/mobile/avatar__mobile1.png");
+    }
+    &:nth-child(2) {
+      background: url("../assets/image/mobile/avatar__mobile2.png");
+    }
+    &:nth-child(3) {
+      background: url("../assets/image/mobile/avatar__mobile3.png");
+    }
+  }
+  .photo__white-container{
+  left: 38px;
+  }
+
+  .team__title {
+    padding-top: 40px;
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30.49px;
+    text-transform: uppercase;
+  }
+  .team__text {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.38px;
+  }
+  .team__info{
+    display: none;
+  }
+}

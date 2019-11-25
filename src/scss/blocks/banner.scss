@@ -1,0 +1,91 @@
+.banner {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/image/desktop/background/backgroundBanner.png");
+  background-repeat: no-repeat;
+  background-color: #181818;
+  background-size: cover;
+
+  //#2 var for scaling background
+  //background: url("../assets/image/desktop/background/banner_backgroundNew.png") no-repeat 65% top, linear-gradient(#181818 100%,#181818 100%);
+}
+
+.banner__info {
+  max-width: 530px;
+  padding-left: 60px;
+  padding-top: 194px;
+}
+
+.banner__title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Yeseva One", serif;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 53.91px;
+  text-transform: uppercase;
+}
+
+.banner__yellow {
+  color: $second;
+}
+
+.banner__text {
+  color: $white;
+  font-family: "FuturaBookC", serif;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 30.94px;
+  margin: 15px 0;
+  max-width: 438px;
+}
+
+.banner__scroll-down {
+}
+
+.banner__button {
+  @include button() {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+  }
+}
+
+.banner__button--last {
+  margin-right: 0;
+  border-color: $white;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .banner__info {
+    max-width: 340px;
+    padding-left: 38px;
+    padding-top: 85px;
+    padding-right: 38px;
+  }
+
+  .banner__title {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30.55px;
+  }
+
+  .banner__text {
+    max-width: 320px;
+    font-size: 16px;
+  }
+  .banner__button {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner__info {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
