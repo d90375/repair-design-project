@@ -1,8 +1,8 @@
 .team {
   background: linear-gradient(
                   to bottom,
-                  #131313 0%,
-                  #131313 400px,
+                  #181818 0%,
+                  #181818 400px,
                   #ffffff 400px,
                   #ffffff 100%
   );
@@ -178,7 +178,7 @@
 
 @media (max-width: 445px) {
   .team{
-    background: #131313;
+    background: #181818;
   }
   .team__photo{
     width: 304px;
