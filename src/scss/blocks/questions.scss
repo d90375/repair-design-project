@@ -210,5 +210,38 @@
     transform: rotate(45deg);
   }
 }
+
+//.google-maps {
+//  position: relative;
+//  padding-bottom: 75%; // This is the aspect ratio
+//  height: 0;
+//  overflow: hidden;
+//}
+//.google-maps iframe {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100% !important;
+//  height: 100% !important;
+//}
+
+#map {
+  width: 925px;
+  height: 466px;
+}
+#info {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  background: #181818;
+}
+
 @media (max-width: 1100px) {
 }
